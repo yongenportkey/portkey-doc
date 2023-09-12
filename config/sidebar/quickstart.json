@@ -1,0 +1,33 @@
+{
+  "title": "Quickstart Guides",
+  "link": "generated",
+  "_template": "category",
+  "document": "docs/QuickStartGuides/quick-start.mdx",
+  "items": [
+    {
+      "title": "Basic Guides for SDKs",
+      "link": "generated",
+      "items": [
+        {
+          "title": "TypeScript",
+          "link": "generated",
+          "_template": "category",
+          "items": [
+            {
+              "document": "docs/OverviewPortkey/start-here.mdx",
+              "label": "Start here",
+              "_template": "doc"
+            }
+          ]
+        },
+        {
+          "title": "Unity",
+          "link": "generated",
+          "_template": "category",
+          "items": []
+        }
+      ],
+      "_template": "category"
+    }
+  ]
+}

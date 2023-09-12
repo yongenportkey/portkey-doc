@@ -16,13 +16,19 @@
           "_template": "doc"
         },
         {
-          "document": "docs/agency.mdx",
-          "label": "agency",
+          "document": "docs/OverviewPortkey/security-mechanism.mdx",
+          "label": "Security Mechanism",
           "_template": "doc"
         },
         {
-          "document": "docs/OverviewPortkey/Security.mdx",
-          "label": "Security",
+          "document": "docs/OverviewPortkey/delegation-fee-mechanism.mdx",
+          "label": "Delegation Fee Mechanism",
+          "_template": "doc"
+        },
+
+        {
+          "document": "docs/OverviewPortkey/portkey-glossary.mdx",
+          "label": "Portkey Glossary",
           "_template": "doc"
         }
       ],
@@ -30,17 +36,31 @@
     },
     {
       "title": "Quickstart Guides",
-      "link": "none",
+      "link": "generated",
       "_template": "category",
+      "document": "docs/QuickStartGuides/quick-start.mdx",
       "items": [
         {
           "title": "Basic Guides for SDKs",
           "link": "generated",
           "items": [
             {
-              "document": "docs/CoreSDK.mdx",
-              "label": "Guides",
-              "_template": "doc"
+              "title": "TypeScript",
+              "link": "generated",
+              "_template": "category",
+              "items": [
+                {
+                  "document": "docs/OverviewPortkey/start-here.mdx",
+                  "label": "Start here",
+                  "_template": "doc"
+                }
+              ]
+            },
+            {
+              "title": "Unity",
+              "link": "generated",
+              "_template": "category",
+              "items": []
             }
           ],
           "_template": "category"
