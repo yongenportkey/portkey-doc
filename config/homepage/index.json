@@ -1,7 +1,7 @@
 {
   "label": "Homepage",
   "title": "Portkey Docs",
-  "description": "Portkey 使用说明文档",
+  "description": "Portkey Docs",
   "blocks": [
     {
       "document": "docs/Introduction.mdx",
