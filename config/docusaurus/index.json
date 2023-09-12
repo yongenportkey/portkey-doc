@@ -1,0 +1,84 @@
+{
+  "label": "Settings",
+  "navbar": [
+    {
+      "label": "Guides",
+      "link": "doc",
+      "docLink": "docs/Introduction.mdx",
+      "position": "left"
+    },
+    {
+      "label": "Blog",
+      "link": "blog",
+      "position": "left"
+    },
+    {
+      "label": "Portkey-Tina-docs GitHub",
+      "link": "external",
+      "externalLink": "https://github.com/baijianxiong15966620168/tina-docs",
+      "position": "right"
+    },
+    {
+      "label": "Tina",
+      "link": "external",
+      "externalLink": "https://tina.io/",
+      "position": "right"
+    }
+  ],
+  "logo": {
+    "alt": "Portkey Docs",
+    "src": "/img/favicon.ico"
+  },
+  "title": "Portkey Docs",
+  "footer": {
+    "style": "dark",
+    "links": [
+      {
+        "title": "Docs",
+        "items": [
+          {
+            "label": "Introduction",
+            "to": "docs/Introduction.mdx",
+            "_template": "internal"
+          }
+        ]
+      },
+      {
+        "title": "Community",
+        "items": [
+          {
+            "label": "Stack Overflow",
+            "href": "https://stackoverflow.com/questions/tagged/docusaurus",
+            "_template": "external"
+          },
+          {
+            "label": "Discord",
+            "href": "https://discordapp.com/invite/docusaurus",
+            "_template": "external"
+          },
+          {
+            "label": "Twitter",
+            "href": "https://twitter.com/docusaurus",
+            "_template": "external"
+          }
+        ]
+      },
+      {
+        "title": "More",
+        "items": [
+          {
+            "label": "Blog",
+            "_template": "blog"
+          },
+          {
+            "label": "GitHub",
+            "href": "https://github.com/facebook/docusaurus",
+            "_template": "external"
+          }
+        ]
+      }
+    ],
+    "copyright": "My Project, Inc. Built with Docusaurus."
+  },
+  "url": "https://tinasaurus.vercel.app/"
+}
