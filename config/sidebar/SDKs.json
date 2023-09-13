@@ -1,0 +1,19 @@
+{
+  "title": "SDKs",
+  "link": "generated",
+  "items": [
+    {
+      "title": "CoreSDK",
+      "link": "none",
+      "items": [
+        {
+          "document": "docs/CoreSDK.mdx",
+          "label": "Guides",
+          "_template": "doc"
+        }
+      ],
+      "_template": "category"
+    }
+  ],
+  "_template": "category"
+}

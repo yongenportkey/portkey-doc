@@ -2,40 +2,75 @@
   "label": "Docs Sidebar",
   "items": [
     {
-      "document": "docs/Introduction.mdx",
-      "label": "Introduction",
-      "_template": "doc"
-    },
-    {
-      "title": "OverviewOfPortkey",
+      "title": "Overview of Portkey",
       "link": "generated",
       "items": [
         {
           "document": "docs/OverviewPortkey/start-here.mdx",
-          "label": "start-here",
+          "label": "Start here",
           "_template": "doc"
         },
         {
           "document": "docs/OverviewPortkey/what-is-portkey.mdx",
-          "label": "what-is-portkey",
+          "label": "What is Portkey?",
           "_template": "doc"
         },
         {
-          "document": "docs/agency.mdx",
-          "label": "agency",
+          "document": "docs/OverviewPortkey/security-mechanism.mdx",
+          "label": "Security Mechanism",
           "_template": "doc"
         },
         {
-          "document": "docs/OverviewPortkey/Security.mdx",
-          "label": "Security",
+          "document": "docs/OverviewPortkey/delegation-fee-mechanism.mdx",
+          "label": "Delegation Fee Mechanism",
+          "_template": "doc"
+        },
+
+        {
+          "document": "docs/OverviewPortkey/portkey-glossary.mdx",
+          "label": "Portkey Glossary",
           "_template": "doc"
         }
       ],
       "_template": "category"
     },
     {
+      "title": "Quickstart Guides",
+      "link": "generated",
+      "_template": "category",
+      "document": "docs/QuickStartGuides/quick-start.mdx",
+      "items": [
+        {
+          "title": "Basic Guides for SDKs",
+          "link": "generated",
+          "items": [
+            {
+              "title": "TypeScript",
+              "link": "generated",
+              "_template": "category",
+              "items": [
+                {
+                  "document": "docs/OverviewPortkey/start-here.mdx",
+                  "label": "Start here",
+                  "_template": "doc"
+                }
+              ]
+            },
+            {
+              "title": "Unity",
+              "link": "generated",
+              "_template": "category",
+              "items": []
+            }
+          ],
+          "_template": "category"
+        }
+      ]
+    },
+
+    {
       "title": "SDKs",
-      "link": "none",
+      "link": "generated",
       "items": [
         {
           "title": "CoreSDK",

@@ -1,0 +1,17 @@
+{
+  "title": "API Reference",
+  "link": "generated",
+  "items": [
+    {
+      "document": "docs/GraphQL.mdx",
+      "label": "GraphQL",
+      "_template": "doc"
+    },
+    {
+      "document": "docs/APIReference/RESTful.mdx",
+      "label": "RESTful",
+      "_template": "doc"
+    }
+  ],
+  "_template": "category"
+}
