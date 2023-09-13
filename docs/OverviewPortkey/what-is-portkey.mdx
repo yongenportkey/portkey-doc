@@ -6,34 +6,61 @@ title: What is Portkey?
 
 ## What is Portkey?
 
-Portkey is the first AA wallet from aelf's ecosystem, migrating users, developers and projects from Web2 to Web3 with DID solution.
-Users can swiftly log into Portkey via their Web2 social info with no private keys or mnemonics required. Underpinned by social recovery and decentralized guardian design, Portkey safeguards users' assets from centralized control and theft. Portkey also generates nearly zero fees for account creation and user usage with a unique delegation mechanism.
-Portkey also provides crypto on/off-ramp services, allowing users to exchange fiat with crypto freely. It supports the storage and management of various digital assets such as tokens, NFTs, etc. The compatibility with multi-chains and seamless connection to all kinds of DApps makes Portkey a great way to enter the world of Web3.
+Portkey is the first AA wallet from aelf's ecosystem, migrating users, developers and projects from Web2 to Web3 with DID solution.  
+Users can swiftly log into Portkey via their Web2 social info with no private keys or mnemonics required. Underpinned by social recovery and decentralized guardian design, Portkey safeguards users' assets from centralized control and theft. Portkey also generates nearly zero fees for account creation and user usage with a unique delegation mechanism.  
+Portkey also provides crypto on/off-ramp services, allowing users to exchange fiat with crypto freely. It supports the storage and management of various digital assets such as tokens, NFTs, etc. The compatibility with multi-chains and seamless connection to all kinds of DApps makes Portkey a great way to enter the world of Web3.  
 With DID solution as its core, Portkey provides both Portkey Wallet and Portkey SDKs.
 
 ## What is Portkey DID solution?
 
-Portkey DID is the process of verifying users' Web2 accounts, and assigning managing addresses to be linked to their accounts, and further control and manage the private keys of user's wallet accounts being stored on users' local device via the managing addresses.
-It is also the key mechanism for social recovery. Whenever a user logs in for the first time on a device or logs back in after logging out, he needs to verify himself in a decentralized way, to ensure no one has control of his account.
+Portkey DID is the process of verifying users' Web2 accounts, and assigning managing addresses to be linked to their accounts, and further control and manage the private keys of user's wallet accounts being stored on users' local device via the managing addresses.  
+It is also the key mechanism for social recovery. Whenever a user logs in for the first time on a device or logs back in after logging out, he needs to verify himself in a decentralized way, to ensure no one has control of his account.  
 The identity verification process can be divided into two parts. First, the user’s social account needs to be verified by “verifiers,” the external service providers sending verification codes to the corresponding social accounts of the guardians, and guardians will release approvals for account registration or login depending on the verification results. Secondly, when the number of guardians is no more than three and all provide approval, or a proportional percentage of the total number of guardians provide approval when the number of guardians exceeds three, a manager address on the device will be generated and linked to the users’ AA wallet account, which can then be controlled.
 
 ## What functions does Portkey SDK provide?
 
 Portkey SDK offers a comprehensive range of functions tailored to meet the needs of developers.
 
-## Portkey DID SDK:
+### Portkey DID SDK:
 
-Portkey SDK comes equipped with the baisc features such as Signup, Login, and Social Recovery. With Portkey DID SDK, projects and developers can easily bridge the Web2 accounts of their users with the Web3 identities their users create and own via Portkey.
+Portkey SDK comes equipped with the basic features such as Signup, Login, and Social Recovery. With Portkey DID SDK, projects and developers can easily bridge the Web2 accounts of their users with the Web3 identities their users create and own via Portkey.
 
-## Portkey UI/UX SDK:
+### Portkey UI/UX SDK:
 
 Developers can leverage the Portkey UI/UX SDK to build the wallet interface for their own applications with customized designs. They can also customize user login methods, enhancing user accessibility and convenience within the application.
 
-## Other SKDs Portkey integrates with:
+### Other SKDs Portkey integrates with:
 
 Portkey SDK extends its functionality through integration with a range of other diverse SDKs. These include the On-off Ramp for effortless fiat and crypto exchanges, the NFT Marketplace for trading digital assets, and the forthcoming cross-chain bridge and swap functionalities. These integrations offer developers a versatile toolkit to build innovative and feature-rich applications.
 
 ## What can you build with Portkey SDKs?
 
-As the preferred solution for projects to enter Web3, Portkey enables Web2 projects to build applications on layer-1 network aelf by integrating with its developer tools. Portkey can help developers achieve easy-onboarding, low-cost, rapid, and secure blockchain integration.
+As the preferred solution for projects to enter Web3, Portkey enables Web2 projects to build applications on layer-1 network aelf by integrating with its developer tools. Portkey can help developers achieve easy-onboarding, low-cost, rapid, and secure blockchain integration.  
 Features of integrating Portkey SDKs:
+
+|              Use Cases              | Description                                                                                                                                                                                                                                                                                   |
+| :---------------------------------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                Games                | Integrate a AA wallet at no cost <br/> Familiar web2 login for easy user onboarding <br/> Effortlessly take your game assets on-chain <br/> Fast and cheap in-game transactions <br/> Full control and ownership of players in-game assets Access to the user resources within aelf ecosystem |
+|       Swap and DEX Platforms        | Easy-to-use wallet simplifying operations <br/> Fast, cheap and secure transactions between users <br/> Cross-chain interoperability <br/> Safety ensured by standardized and audited code practices <br/> High-performance network aelf ensures scalability                                  |
+|          NFT Marketplaces           | Easy-to-use wallet, tailored to users' needs <br/> Facilitation of non-fungible token trading and presentation <br/> Remarkable reduction in development expenditures                                                                                                                         |
+| Other types of Web3 tools and Dapps | Free exploration of any type of BUIDL with Portkey SDK and its functionalities <br/> Supported by high performance and low cost layer 1 network, aelf                                                                                                                                         |
+
+Whether it's a game studio or an independent developer, you can quickly build and deploy games. We've crafted comprehensible developer documentation, providing DEMOs for each crucial step to streamline your game development journey. You can focus on creating engaging gaming experiences, bring your games to the market as soon as possible.
+
+## Why Portkey solution?
+
+### 1. Easy onboarding
+
+Portkey SDK helps developers, applications and projects onboard users as easily and fast as possible. It allows users to create and log into Web3 wallet accounts with just their Web2 existing accounts, without having to memorizing the complicated and easy-to-lose seed phrases.
+
+### 2. Free to use
+
+Portkey SDK is totally open-sourced and free-to-use for developers.
+
+### 3. Enhanced Security
+
+Portkey DID SDK encompasses social recovery logic SDK which projects and developers can leverage to protect their users' Web3 assets. Social recovery decouples users accounts with their private keys to eliminate the risk of singular point. Under social recovery mechanism, user accounts are safeguarded by decentralized guardians imparting users' accounts with not only total self-custody but also upgraded security. On top of that, as indicated by its name, social recovery makes Web3 wallets recoverable and prevent users from losses when when they accidentally lose devices which have their accounts.
+
+### 4. Unlimited Scalability and Interoperability
+
+Backed by high performance layer 1 network, aelf, using Portkey SDK also comes with enjoying unlimited scalability. In the meantime, Portkey SDK will also support multiple chains in the future, providing interoperability to developers and applications.
