@@ -12,13 +12,13 @@ Users can scan the code on logged-in devices to log in on new devices
 
 Logged in management to add management.
 
-```TypeScript
+```typescript
 login(type: 'scan', params: ScanLoginParams): Promise<true>;
 ```
 
 ### Usage
 
-```TypeScript
+```typescript
 did.login('scan',{
   chainId: 'chainId',
   caHash: 'caHash',

@@ -28,7 +28,7 @@ When users create an account or add a guardian, verifier services are needed to 
 
 #### Request
 
-```TypeScript
+```typescript
 // fetch the verifier service to AELF
 
 const verifierInfo: VerifierItem = did.didWallet.getRecommendationVerifier('AELF')
@@ -36,7 +36,7 @@ const verifierInfo: VerifierItem = did.didWallet.getRecommendationVerifier('AELF
 
 ### Example response
 
-```TypeScript
+```typescript
 {
   id: 'verifier01',
   imageUrl: 'https://x/Gauss.png',
@@ -46,7 +46,7 @@ const verifierInfo: VerifierItem = did.didWallet.getRecommendationVerifier('AELF
 
 ### Supplemental Code
 
-```TypeScript
+```typescript
 interface VerifierItem {
   id: string;
   name: string;
@@ -68,13 +68,13 @@ Use [Google's reCAPTCHA](https://cloud.google.com/recaptcha-enterprise) and get 
 
 Prerequisite: the verification code from reCAPTCHA needs to be put in the API request.
 
-```TypeScript
+```typescript
 reCaptchaToken: 'reCaptchaTokenCode'
 ```
 
 Initiate a request
 
-```TypeScript
+```typescript
 const verifyGoogleToken = await did.services.verifyGoogleToken({
   verifierId: 'verifierId',
   chainId: 'chainIn',
@@ -85,16 +85,16 @@ const verifyGoogleToken = await did.services.verifyGoogleToken({
 
 ### Example response
 
-```TypeScript
+```typescript
 {
-    verificationDoc: 'verificationDoc',
-    signature: 'signature',
+  verificationDoc: 'verificationDoc',
+  signature: 'signature',
 }
 ```
 
 ### Supplemental Code
 
-```TypeScript
+```typescript
 enum OperationTypeEnum {
   unknown = 0,
   register = 1,

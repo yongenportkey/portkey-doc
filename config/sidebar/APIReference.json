@@ -3,7 +3,7 @@
   "link": "generated",
   "items": [
     {
-      "document": "docs/GraphQL.mdx",
+      "document": "docs/APIReference/GraphQL.mdx",
       "label": "GraphQL",
       "_template": "doc"
     },

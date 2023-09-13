@@ -8,7 +8,7 @@ Before integrating Portkey SDK, you need to install and initialize.
 
 ## Core SDK
 
-[Core SDK](docs/OverviewPortkey/start-here.mdx) serves as a wrapper for our API, encompassing most of Portkey's functionalities. Before you start using the Core SDK, it's essential to configure the API service.
+[Core SDK](docs/SDKs/CoreSDK/CoreSDK.mdx) serves as a wrapper for our API, encompassing most of Portkey's functionalities. Before you start using the Core SDK, it's essential to configure the API service.
 
 Initialize the Core SDK client with the network on which you want your application to run:
 
@@ -30,9 +30,9 @@ $ yarn add @portkey/did
 ### Initialize
 
 New a `did ` object globally and configure it, use our function with `did`
-Please refer to [Environmental configuration](docs/OverviewPortkey/start-here.mdx)
+Please refer to [Environmental configuration](docs/EnvironmentalConfiguration.mdx)
 
-```TypeScript
+```typescript
 import { DID } from '@portkey/did';
 
 export const did = new DID();
@@ -54,7 +54,7 @@ did.setConfig({
 
 ## UI SDK
 
-[UI SDK](docs/OverviewPortkey/start-here.mdx) enables swift integration for projects, eliminating the need for an in-depth understanding of Portkey's underlying mechanisms. This facilitates the seamless incorporation of core functionalities without delving into Portkey's tech details.
+[UI SDK](docs/SDKs/UISDK/UISDK.mdx) enables swift integration for projects, eliminating the need for an in-depth understanding of Portkey's underlying mechanisms. This facilitates the seamless incorporation of core functionalities without delving into Portkey's tech details.
 
 ### Installation
 
@@ -68,7 +68,7 @@ $ yarn add @portkey/did-ui-react@latest
 
 ### Configuration
 
-```TypeScript
+```typescript
 import { ConfigProvider } from '@portkey/did-ui-react';
 
 ConfigProvider.setGlobalConfig({

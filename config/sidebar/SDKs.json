@@ -1,10 +1,12 @@
 {
   "title": "SDKs",
-  "link": "generated",
+  "link": "doc",
+  "docLink": "docs/SDKs/SDKs.mdx",
   "items": [
     {
       "title": "Core SDK",
-      "link": "none",
+      "link": "doc",
+      "docLink": "docs/SDKs/CoreSDK/CoreSDK.mdx",
       "items": [
         {
           "title": "TypeScript",
@@ -98,7 +100,8 @@
     },
     {
       "title": "UI SDK",
-      "link": "none",
+      "link": "doc",
+      "docLink": "docs/SDKs/UISDK/UISDK.mdx",
       "items": [
         {
           "title": "TypeScript",
@@ -112,7 +115,8 @@
             },
             {
               "title": "Document",
-              "link": "none",
+              "link": "doc",
+              "docLink": "docs/SDKs/UISDK/TypeScript/Document/Document.mdx",
               "items": [
                 {
                   "document": "docs/SDKs/UISDK/TypeScript/Document/Configuration.mdx",
@@ -241,6 +245,11 @@
                 }
               ],
               "_template": "category"
+            },
+            {
+              "document": "docs/SDKs/UISDK/TypeScript/FAQ.mdx",
+              "label": "FAQ",
+              "_template": "doc"
             }
           ]
         }

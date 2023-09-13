@@ -13,7 +13,7 @@ Getting the currently synchronized chainList
 
 Request
 
-```TypeScript
+```typescript
 await did.services.getChainsInfo();
 ```
 
@@ -23,7 +23,7 @@ Get the originChainId of the account
 
 Request
 
-```TypeScript
+```typescript
 await did.services.getRegisterInfo()
 ```
 
@@ -32,7 +32,7 @@ await did.services.getRegisterInfo()
 Get holderInfo
 Request
 
-```TypeScript
+```typescript
 await did.services.getHolderInfo();
 ```
 
@@ -42,7 +42,7 @@ Get the assets of the account
 
 Request Token
 
-```TypeScript
+```typescript
 await did.services.assets.fetchAccountTokenList({
     skipCount: number;
     maxResultCount: number;
@@ -53,7 +53,7 @@ await did.services.assets.fetchAccountTokenList({
 
 Request NFT CollectionList
 
-```TypeScript
+```typescript
 await did.services.assets.fetchAccountNftCollectionList({
     skipCount: number;
     maxResultCount: number;
@@ -66,7 +66,7 @@ await did.services.assets.fetchAccountNftCollectionList({
 
 Request NFT Collection item list
 
-```TypeScript
+```typescript
 await did.services.assets.fetchAccountNftCollectionItemList({
     symbol: string;
     caAddressInfos: CaAddressInfosType;
@@ -75,15 +75,13 @@ await did.services.assets.fetchAccountNftCollectionItemList({
     width: number;
     height: number;
 })
-
 ```
 
 ## Activities
 
 Request
 
-```TypeScript
-
+```typescript
 await did.services.activity.getActivityList({
   maxResultCount: number;
   skipCount: number;
@@ -99,5 +97,4 @@ await did.services.activity.getActivityList({
   width?: number;
   height?: number;
 })
-
 ```
