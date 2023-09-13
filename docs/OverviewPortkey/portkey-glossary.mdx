@@ -1,0 +1,68 @@
+---
+title: Portkey Glossary
+---
+
+# Portkey Glossary
+
+## EOA
+
+An EOA (Externally Owned Account) is a type of account managed by private keys which can be created without any cost. EOAs enable users to initiate transactions, exchange tokens, and interact with DApps/smart contracts.  
+ However, EOA can be tough and risky to use, as the private key is complex and can be easily stolen or hacked. If the private key is leaked to other, user accounts will be controlled by them and become irretrievable.
+
+## CA
+
+A CA (Contract Account) is a smart contract that's deployed on the blockchain. Essentially, a CA wallet manages user accounts via smart contracts, eliminating the need for private keys. It can function similarly to an EOA wallet, performing tasks like token transfers and interacting with DApps, while also providing additional customizable features like transaction batching and the ability to pay fees using various tokens, etc. Moreover, a CA wallet can be programmed to enhance account security through mechanisms like social recovery.
+
+## EOA vs CA
+
+|                                | EOA                                    | CA                                                                                                                             |
+| ------------------------------ | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| ** Account **                  | Account linked with on-chain addresses | Account linked with smart contract                                                                                             |
+| ** Cost of Account Creation ** | zero                                   | Incurring costs, but the cost can be sponsored                                                                                 |
+| ** Controlled by **            | Private key                            | Smart contract                                                                                                                 |
+| ** Recoverable **              | No                                     | Yes                                                                                                                            |
+| ** Security **                 | Dependent on private key management    | Extra layers of security can be added through smart contract                                                                   |
+| ** Functions **                | Token transfer and DApp interaction    | Can be programmed to enable functions like token transfer, DApp interaction, transaction batching, fee payment in other tokens |
+
+## Private Key
+
+A private key is a string of letters and numbers that's generated when an EOA is created. For EOA owners, they need private keys to unlock their accounts and manage the funds. Once the key is lost or stolen, users can not recover the accounts and they'll lose control over their assets.
+
+## AA
+
+AA (Account Abstraction) is an Ethereum technology that enables users to use smart contract wallets, aka CA wallets, instead of EOAs as their primary accounts, as defined in ERC-4337. Using AA, each CA wallet on Ethereum is deployed as an individual smart contract on Ethereum. When initiating a transaction, AA employs multiple components like user operations, bundler, Entry proof, Aggregator, and Paymaster.
+
+## VA
+
+VA (Virtual Address) is aelf's approach to enable CA wallet creation, just like what AA does on Ethereum. With the help of VA, developers on aelf can build a CA wallet that removes the use of private keys to manage wallet accounts.  
+VA is different from AA in how CA wallets are created and how transactions are processed. The creation of CA wallets on aelf relies on VA and these virtual addresses are created based on Portkey CA contract and caHash, which means no individual contract needs to be deployed. When initiating a transaction, CA wallets call Portkey's CA contract by triggering the Manager and then sending VA-initiated transactions. Given that Portkey's CA contract plays a central role in transactions, Portkey recognizes the utmost significance of ensuring the security of smart contracts. The contract has undergone thorough auditing and has been open-sourced to uphold transparency and enhance security.
+
+## AA vs VA
+
+|                                               | AA                                                                                                                                          | VA                                                                                                                                          |
+| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| ** Account Creation **                        | Individual on-chain contract deployment for each user's account                                                                             | Based on Portkey CA contract and caHash, no need for individual contract deployment.                                                        |
+| ** Private Key **                             | Not needed                                                                                                                                  | Not needed                                                                                                                                  |
+| ** Cost of Account Creation **                | Comparatively high cost due to contract deployment fees                                                                                     | The cost is less than AA's contract deployment method and can be covered by aelf's delegation mechanism                                     |
+| ** Transaction Processing Process **          | Complex processing flow with various roles involved, such as user operations, bundler, Entry proof and execution, Aggregator, and Paymaster | Simpler approach by interacting only with the Portkey CA contract through triggering the Manager and then sending VA-initiated transactions |
+| ** Transaction Fee **                         | High gas fee on Ethereum                                                                                                                    | 0.0003 ELF per transaction on aelf                                                                                                          |
+| ** Account Recoverable **                     | Yes                                                                                                                                         | Yes                                                                                                                                         |
+| ** Third Parties Covering Transaction Fees ** | Can be done via Paymaster                                                                                                                   | Can be done via delegation mechanism                                                                                                        |
+| ** More Functions **                          | Can be programmed                                                                                                                           | Can be programmed                                                                                                                           |
+
+## DID
+
+A DID (Decentralized Identity) is a self-owned, independent identity recorded on the blockchain that allows users to experience the Web3 world. In Portkey, users' Web3 identities are created when they create a Portkey wallet account. The identities are established by linking users' Web2 info with Web3 wallet addresses which are verified by guardians.
+
+## Social Recovery
+
+Social recovery is a way to recover a user's wallet resorting to decentralized guardians and verifiers. When users lose the device with their Portkey wallet accounts logged in, they can initiate social recovery and follow a 2-step process to safeguard their accounts. First, they ask for guardians' approval to log in on a new device. Then, after they are logged in, they can remove the old device to prevent it from accessing their accounts.
+
+## Guardian
+
+Guardians are critical roles responsible for decentralized identity verification and help users to fulfill social recovery processes. It can be a phone number, email, Google account, and Apple ID. When receiving requests from the account owner, guardians verify the user's identity and then authorize their actions, such as new device logins or the addition of more Guardians.  
+To enhance decentralization, external verification services are provided by the role of verifiers to authenticate guardian's approval.
+
+## Verifier
+
+Verifiers are external verification service providers for the approval process associated with social recovery, offering verification via Email, SMS OTP, Google, or Apple. Users have the flexibility to select verifiers for each guardian, allowing them to tailor the decentralization level and security of their wallet.
