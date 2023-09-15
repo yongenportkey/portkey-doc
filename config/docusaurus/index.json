@@ -4,7 +4,7 @@
     {
       "label": "Guides",
       "link": "doc",
-      "docLink": "docs/Introduction.mdx",
+      "docLink": "docs/OverviewPortkey/start-here.mdx",
       "position": "left"
     },
     {
@@ -38,7 +38,7 @@
         "items": [
           {
             "label": "Introduction",
-            "to": "docs/Introduction.mdx",
+            "to": "docs/OverviewPortkey/start-here.mdx",
             "_template": "internal"
           }
         ]

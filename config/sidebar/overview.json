@@ -1,0 +1,33 @@
+{
+  "title": "Overview of Portkey",
+  "link": "generated",
+  "items": [
+    {
+      "document": "docs/OverviewPortkey/start-here.mdx",
+      "label": "Start here",
+      "_template": "doc"
+    },
+    {
+      "document": "docs/OverviewPortkey/what-is-portkey.mdx",
+      "label": "What is Portkey?",
+      "_template": "doc"
+    },
+    {
+      "document": "docs/OverviewPortkey/security-mechanism.mdx",
+      "label": "Security Mechanism",
+      "_template": "doc"
+    },
+    {
+      "document": "docs/OverviewPortkey/delegation-fee-mechanism.mdx",
+      "label": "Delegation Fee Mechanism",
+      "_template": "doc"
+    },
+
+    {
+      "document": "docs/OverviewPortkey/portkey-glossary.mdx",
+      "label": "Portkey Glossary",
+      "_template": "doc"
+    }
+  ],
+  "_template": "category"
+}

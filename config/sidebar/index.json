@@ -2,49 +2,174 @@
   "label": "Docs Sidebar",
   "items": [
     {
-      "document": "docs/Introduction.mdx",
-      "label": "Introduction",
-      "_template": "doc"
-    },
-    {
-      "title": "OverviewOfPortkey",
+      "title": "Overview of Portkey",
       "link": "generated",
       "items": [
         {
           "document": "docs/OverviewPortkey/start-here.mdx",
-          "label": "start-here",
+          "label": "Start here",
           "_template": "doc"
         },
         {
           "document": "docs/OverviewPortkey/what-is-portkey.mdx",
-          "label": "what-is-portkey",
+          "label": "What is Portkey?",
           "_template": "doc"
         },
         {
-          "document": "docs/agency.mdx",
-          "label": "agency",
+          "document": "docs/OverviewPortkey/security-mechanism.mdx",
+          "label": "Security Mechanism",
           "_template": "doc"
         },
         {
-          "document": "docs/OverviewPortkey/Security.mdx",
-          "label": "Security",
+          "document": "docs/OverviewPortkey/delegation-fee-mechanism.mdx",
+          "label": "Delegation Fee Mechanism",
+          "_template": "doc"
+        },
+
+        {
+          "document": "docs/OverviewPortkey/portkey-glossary.mdx",
+          "label": "Portkey Glossary",
           "_template": "doc"
         }
       ],
       "_template": "category"
     },
     {
-      "title": "SDKs",
-      "link": "none",
+      "title": "Quickstart Guides",
+      "link": "generated",
+      "_template": "category",
+      "document": "docs/QuickStartGuides/quick-start.mdx",
       "items": [
         {
-          "title": "CoreSDK",
+          "title": "Basic Guides for SDKs",
+          "link": "generated",
+          "items": [
+            {
+              "title": "TypeScript",
+              "link": "generated",
+              "_template": "category",
+              "items": [
+                {
+                  "document": "docs/OverviewPortkey/start-here.mdx",
+                  "label": "Start here",
+                  "_template": "doc"
+                }
+              ]
+            },
+            {
+              "title": "Unity",
+              "link": "generated",
+              "_template": "category",
+              "items": []
+            }
+          ],
+          "_template": "category"
+        }
+      ]
+    },
+
+    {
+      "title": "SDKs",
+      "link": "generated",
+      "items": [
+        {
+          "title": "Core SDK",
           "link": "none",
           "items": [
             {
-              "document": "docs/CoreSDK.mdx",
-              "label": "Guides",
-              "_template": "doc"
+              "title": "TypeScript",
+              "link": "none",
+              "_template": "category",
+              "items": [
+                {
+                  "document": "docs/SDKs/CoreSDK/TypeScript/@portkeyServices.mdx",
+                  "label": "@portkey/services",
+                  "_template": "doc"
+                },
+                {
+                  "document": "docs/SDKs/CoreSDK/TypeScript/@portkeyContracts.mdx",
+                  "label": "@portkey/contracts",
+                  "_template": "doc"
+                },
+                {
+                  "document": "docs/SDKs/CoreSDK/TypeScript/@portkeyDid.mdx",
+                  "label": "@portkey/did",
+                  "_template": "doc"
+                },
+                {
+                  "document": "docs/SDKs/CoreSDK/TypeScript/@portkeyRequest.mdx",
+                  "label": "@portkey/request",
+                  "_template": "doc"
+                }
+              ]
+            },
+            {
+              "title": "Unity",
+              "link": "none",
+              "_template": "category",
+              "items": [
+                {
+                  "document": "docs/SDKs/CoreSDK/Unity/DID.mdx",
+                  "label": "DID",
+                  "_template": "doc"
+                },
+                {
+                  "document": "docs/SDKs/CoreSDK/Unity/ContractBasic.mdx",
+                  "label": "Contract Basic",
+                  "_template": "doc"
+                },
+                {
+                  "document": "docs/SDKs/CoreSDK/Unity/GraphQL.mdx",
+                  "label": "GraphQL",
+                  "_template": "doc"
+                },
+                {
+                  "document": "docs/SDKs/CoreSDK/Unity/PortkeyConfig.mdx",
+                  "label": "PortkeyConfig",
+                  "_template": "doc"
+                }
+              ]
+            }
+          ],
+          "_template": "category"
+        },
+        {
+          "title": "UI SDK",
+          "link": "none",
+          "items": [
+            {
+              "title": "TypeScript",
+              "link": "none",
+              "_template": "category",
+              "items": [
+                {
+                  "document": "docs/SDKs/UISDK/TypeScript/GettingStarted.mdx",
+                  "label": "Guides",
+                  "_template": "doc"
+                },
+                {
+                  "title": "Document",
+                  "link": "none",
+                  "_template": "category",
+                  "items": [
+                    {
+                      "document": "docs/SDKs/UISDK/TypeScript/Document/Configuration.mdx",
+                      "label": "Configuration",
+                      "_template": "doc"
+                    },
+                    {
+                      "document": "docs/SDKs/UISDK/TypeScript/Document/Multi-themeConfiguration.mdx",
+                      "label": "Multi-theme Configuration",
+                      "_template": "doc"
+                    },
+                    {
+                      "document": "docs/SDKs/UISDK/TypeScript/Document/PortkeyProvider.mdx",
+                      "label": "Provider ( PortkeyProvider )",
+                      "_template": "doc"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "_template": "category"
@@ -70,7 +195,7 @@
       "_template": "category"
     },
     {
-      "document": "docs/environmentalConfiguration.mdx",
+      "document": "docs/EnvironmentalConfiguration.mdx",
       "label": "Environmental Configuration",
       "_template": "doc"
     }
