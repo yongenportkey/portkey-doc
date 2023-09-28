@@ -15,18 +15,30 @@
   --ifm-color-primary-lightest: #b9cffa;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-hover-overlay: #F5F7FA;
+  --ifm-table-border-color: #DEE2E8;
+  --ifm-footer-background-color: #F5F7FA;
+  --prism-background-color: #F5F7FA;
+  --ifm-navbar-height: 80px;
+  --ifm-footer-link-color: #25272A;
+  --ifm-footer-copy-right-color: #B6BABF;
+  --ifm-footer-title-color: #84909A;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme="dark"] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+[data-theme="dark"]:root {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-hover-overlay: #262626;
+  --ifm-background-color: #000000;
+  --ifm-navbar-background-color: #000000;
+  --ifm-footer-background-color: #151718;
+  --ifm-table-background: #151718;
+  --ifm-table-head-background:  #151718;
+  --ifm-table-border-color: #262626;
+  --prism-background-color: #151718;
+  --ifm-color-gray-700: var(--ifm-toc-border-color);
+  --ifm-footer-link-color: #FFF;
+  --ifm-footer-title-color: #FFF;
 }
 
 .align-center {
@@ -45,19 +57,40 @@
   flex: 1 1 0%;
   padding: 4px;
 }
-.security-mechanism li:hover {
+/* .security-mechanism li:hover {
   background: rgb(247, 247, 248);
-}
+} */
 
 .security-mechanism li + li {
   margin-top: 0;
 }
 
-.highlight-block-container {
+.highlight-block-container{
   border: 1px solid #fed4a4;
   border-radius: 8px;
   background-color: #fff5eb;
   padding: 16px;
   margin-bottom: 24px;
   color: rgb(31, 35, 41);
+}
+
+.menu__list-item-collapsible .menu__link--active,.menu__list-item-collapsible .menu__link:hover {
+  background: none !important;
+}
+
+table thead tr {
+  border-bottom: none;
+}
+
+.table-of-contents {
+  font-size: 0.9rem;
+}
+
+.footer__copyright {
+  font-size: 14px;
+  color: var(--ifm-footer-copy-right-color);
+}
+
+.footer__title {
+  color: var(--ifm-footer-title-color);
 }

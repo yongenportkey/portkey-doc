@@ -110,6 +110,7 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: docusaurusData.url + "/admin/#/collections/doc",
         },
+        // blog: false,
         blog: {
           showReadingTime: true,
           editUrl: docusaurusData.url + "/admin/#/collections/post",
@@ -125,27 +126,32 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: docusaurusData.title || "",
+        // title: docusaurusData.title || "",
         logo: {
           alt: docusaurusData?.logo?.alt
             ? docusaurusData?.logo?.alt
             : "My Logo",
           src: docusaurusData?.logo?.src
             ? docusaurusData?.logo?.src
-            : "img/logo.svg",
+            : "img/portkey-logo-light.png",
+          srcDark: docusaurusData?.logo?.srcDark
+            ? docusaurusData?.logo?.srcDark
+            : "img/portkey-logo-dark.png",
+          href: "/docs/OverviewPortkey/start-here",
         },
         items: docusaurusData.navbar.map((item) => {
           return formatNavbarItem(item);
         }),
+        hideOnScroll: true,
       },
       footer: {
-        style: docusaurusData.footer?.style || "dark",
         links: docusaurusData.footer?.links.map((item) => {
           return formatFooterItem(item);
         }),
-        copyright:
-          `Copyright © ${new Date().getFullYear()} ` +
-          (docusaurusData.footer?.copyright || docusaurusData.title),
+        // copyright:
+        //   `Copyright © ${new Date().getFullYear()} ` +
+        //   (docusaurusData.footer?.copyright || docusaurusData.title),
+        copyright: docusaurusData.footer?.copyright,
       },
       prism: {
         theme: lightCodeTheme,

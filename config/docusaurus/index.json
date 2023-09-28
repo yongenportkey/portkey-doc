@@ -8,77 +8,73 @@
       "position": "left"
     },
     {
-      "label": "Blog",
-      "link": "blog",
-      "position": "left"
-    },
-    {
-      "label": "Portkey-Tina-docs GitHub",
+      "label": "Portkey GitHub",
       "link": "external",
       "externalLink": "https://github.com/baijianxiong15966620168/tina-docs",
-      "position": "right"
-    },
-    {
-      "label": "Tina",
-      "link": "external",
-      "externalLink": "https://tina.io/",
       "position": "right"
     }
   ],
   "logo": {
     "alt": "Portkey Docs",
-    "src": "/img/favicon.ico"
+    "src": "/img/portkey-logo-light.png",
+    "darkSrc": "/img/portkey-logo-dark.png"
   },
   "title": "Portkey Docs",
   "footer": {
     "style": "dark",
     "links": [
       {
-        "title": "Docs",
+        "title": "Developers",
         "items": [
           {
-            "label": "Introduction",
-            "to": "docs/OverviewPortkey/start-here.mdx",
-            "_template": "internal"
-          }
-        ]
-      },
-      {
-        "title": "Community",
-        "items": [
-          {
-            "label": "Stack Overflow",
-            "href": "https://stackoverflow.com/questions/tagged/docusaurus",
+            "label": "Documentation",
+            "to": "https://portkeydocs.readthedocs.io/en/latest/index.html#",
             "_template": "external"
           },
           {
-            "label": "Discord",
-            "href": "https://discordapp.com/invite/docusaurus",
-            "_template": "external"
-          },
-          {
-            "label": "Twitter",
-            "href": "https://twitter.com/docusaurus",
+            "label": "Use Case",
+            "to": "https://www.beangotown.com/",
             "_template": "external"
           }
         ]
       },
       {
-        "title": "More",
+        "title": "Resources",
         "items": [
           {
             "label": "Blog",
-            "_template": "blog"
+            "to": "https://medium.com/@PortkeyDID",
+            "_template": "external"
           },
           {
-            "label": "GitHub",
-            "href": "https://github.com/facebook/docusaurus",
+            "label": "Media Kit",
+            "to": "https://portkey.finance/media-kit",
+            "_template": "external"
+          },
+          {
+            "label": "Linktree",
+            "to": "https://linktr.ee/portkeydid",
+            "_template": "external"
+          }
+        ]
+      },
+      {
+        "title": "Legal",
+        "items": [
+          {
+            "label": "Terms of Service",
+            "to": "https://portkey.finance/terms-of-service",
+            "_template": "external"
+          },
+          {
+            "label": "Privacy Policy",
+            "to": "https://portkey.finance/privacy-policy",
             "_template": "external"
           }
         ]
       }
     ],
-    "copyright": "My Project, Inc. Built with Docusaurus."
+    "copyright": "Portkey@2023"
   },
   "url": "https://tinasaurus.vercel.app/"
 }
