@@ -13,23 +13,24 @@ With DID solution as its core, Portkey provides both Portkey Wallet and Portkey 
 
 ## What is Portkey DID solution?
 
-Portkey DID is the process of verifying users' Web2 accounts, and assigning managing addresses to be linked to their accounts, and further control and manage the private keys of user's wallet accounts being stored on users' local device via the managing addresses.  
+Portkey DID provides the solution for Web2 games and projects to establish Web3 identities and create on-chain addresses for their users, via the process of verifying users' Web2 accounts, and assigning managing addresses to be linked to their accounts, and further control and manage the private keys of user's wallet accounts being stored on users' local device via the managing addresses.  
 It is also the key mechanism for social recovery. Whenever a user logs in for the first time on a device or logs back in after logging out, he needs to verify himself in a decentralized way, to ensure no one has control of his account.  
-The identity verification process can be divided into two parts. First, the user's social account needs to be verified by "verifiers," the external service providers sending verification codes to the corresponding social accounts of the guardians, and guardians will release approvals for account registration or login depending on the verification results. Secondly, when the number of guardians is no more than three and all provide approval, or a proportional percentage of the total number of guardians provide approval when the number of guardians exceeds three, a manager address on the device will be generated and linked to the users' AA wallet account, which can then be controlled.
+The identity verification process can be divided into two parts. First, the user's social account needs to be verified by “verifiers,” the external service providers sending verification codes to the corresponding social accounts of the guardians, and guardians will release approvals for account registration or login depending on the verification results. Secondly, when the number of guardians is no more than three and all provide approval, or a proportional percentage of the total number of guardians provide approval when the number of guardians exceeds three, a manager address on the device will be generated and linked to the users’ AA wallet account, which can then be controlled.
 
-## What functions does Portkey SDK provide?
+## What does Portkey SDK provide?
 
-Portkey SDK offers a comprehensive range of functions tailored to meet the needs of developers.
+With Portkey Core SDK at heart, Portkey SDK offeres a plethora of SDKs to meet the needs of developers onboarding their users to Web3 and integrate Web3 wallets instantly, enabling developers to create or issue digital assets, as well as providing them all-dimensional capabilities such as on-off ramp services, NFT check-out, cross-chain bridges, swap and so forth, to meet the all-around and tailored needs of the developers.  
+Portkey SDKs also covers a wide range of different languages and platforms, including TypeScript, Unity, COCOS, Android and iOS SDK to help developers with various conditions to execute basic or customizable functionalities.
 
-### Portkey DID SDK:
+### Portkey Core SDK:
 
-Portkey SDK comes equipped with the basic features such as Signup, Login, and Social Recovery. With Portkey DID SDK, projects and developers can easily bridge the Web2 accounts of their users with the Web3 identities their users create and own via Portkey.
+Portkey SDK comes equipped with the baisc features such as Signup, Login, and Social Recovery. With Portkey DID SDK, projects and developers can easily bridge the Web2 accounts of their users with the Web3 identities their users create and own via Portkey.
 
 ### Portkey UI/UX SDK:
 
 Developers can leverage the Portkey UI/UX SDK to build the wallet interface for their own applications with customized designs. They can also customize user login methods, enhancing user accessibility and convenience within the application.
 
-### Other SKDs Portkey integrates with:
+### Other SDKs Portkey integrates with:
 
 Portkey SDK extends its functionality through integration with a range of other diverse SDKs. These include the On-off Ramp for effortless fiat and crypto exchanges, the NFT Marketplace for trading digital assets, and the forthcoming cross-chain bridge and swap functionalities. These integrations offer developers a versatile toolkit to build innovative and feature-rich applications.
 
@@ -38,14 +39,120 @@ Portkey SDK extends its functionality through integration with a range of other 
 As the preferred solution for projects to enter Web3, Portkey enables Web2 projects to build applications on layer-1 network aelf by integrating with its developer tools. Portkey can help developers achieve easy-onboarding, low-cost, rapid, and secure blockchain integration.  
 Features of integrating Portkey SDKs:
 
-|              Use Cases              | Description                                                                                                                                                                                                                                                                                   |
-| :---------------------------------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|                Games                | Integrate a AA wallet at no cost <br/> Familiar web2 login for easy user onboarding <br/> Effortlessly take your game assets on-chain <br/> Fast and cheap in-game transactions <br/> Full control and ownership of players in-game assets Access to the user resources within aelf ecosystem |
-|       Swap and DEX Platforms        | Easy-to-use wallet simplifying operations <br/> Fast, cheap and secure transactions between users <br/> Cross-chain interoperability <br/> Safety ensured by standardized and audited code practices <br/> High-performance network aelf ensures scalability                                  |
-|          NFT Marketplaces           | Easy-to-use wallet, tailored to users' needs <br/> Facilitation of non-fungible token trading and presentation <br/> Remarkable reduction in development expenditures                                                                                                                         |
-| Other types of Web3 tools and Dapps | Free exploration of any type of BUIDL with Portkey SDK and its functionalities <br/> Supported by high performance and low cost layer 1 network, aelf                                                                                                                                         |
+|              Use Cases              | Description                                                                                                                                                                                                                                                                                         |
+| :---------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                Games                | Integrate a AA wallet at no cost <br/> Familiar web2 login for easy user onboarding <br/> Effortlessly take your game assets on-chain <br/> Fast and cheap in-game transactions <br/> Full control and ownership of players in-game assets <br/> Access to the user resources within aelf ecosystem |
+|       Swap and DEX Platforms        | Easy-to-use wallet simplifying operations <br/> Fast, cheap and secure transactions between users <br/> Cross-chain interoperability <br/> Safety ensured by standardized and audited code practices <br/> High-performance network aelf ensures scalability                                        |
+|          NFT Marketplaces           | Easy-to-use wallet, tailored to users' needs <br/> Facilitation of non-fungible token trading and presentation <br/> Remarkable reduction in development expenditures                                                                                                                               |
+| Other types of Web3 tools and Dapps | Free exploration of any type of BUIDL with Portkey SDK and its functionalities <br/> Supported by high performance and low cost layer 1 network, aelf                                                                                                                                               |
 
 Whether it's a game studio or an independent developer, you can quickly build and deploy games. We've crafted comprehensible developer documentation, providing DEMOs for each crucial step to streamline your game development journey. You can focus on creating engaging gaming experiences, bring your games to the market as soon as possible.
+
+## Example functionality matrix
+
+<table class='align-center'>
+
+<tr>
+  <th colspan="2" rowspan="2"></th>
+  <th colspan="2"> Connect to user wallet </th>
+    <th colspan="2">Manage user asset </th>
+
+  <th rowspan="2">on/off ramp</th>
+  <th rowspan="2">NFT checkout</th>
+</tr>
+<tr>
+  <th>Sign-up, Login</th>
+  <th> Logout </th>
+
+<th>Get list of assets</th>
+  <th> Send/receive assets</th>
+</tr>
+
+<tr >
+  <td rowspan="4">Core SDK</td>
+  <td> Typescript </td>
+  <td> ✅ </td>
+<td> ✅ </td>
+<td> ✅ </td>
+<td> ✅ </td>
+<td> ✅ </td>
+<td> ✅ </td>
+</tr>
+<tr>
+  <td> Unity </td>
+  <td> ✅ </td>
+<td> ✅ </td>
+<td> ✅ </td>
+<td> 🚀  </td>
+<td> 🚀  </td>
+<td> 🚀  </td>
+
+</tr>
+<tr>
+  <td> Android SDK  </td>
+  <td> 🚀 </td>
+<td> 🚀 </td>
+<td> 🚀 </td>
+<td> 🚀  </td>
+<td> 🚀  </td>
+<td> 🚀  </td>
+
+</tr>
+<tr>
+  <td> iOS SDK  </td>
+  <td> 🚀 </td>
+<td> 🚀 </td>
+<td> 🚀 </td>
+<td> 🚀  </td>
+<td> 🚀  </td>
+<td> 🚀  </td>
+
+</tr>
+
+<tr >
+  <td rowspan="4">UI SDK</td>
+  <td> Typescript </td>
+  <td> ✅ </td>
+<td> ❌ </td>
+<td> ✅ </td>
+<td> ✅ </td>
+<td> ✅ </td>
+<td> ✅ </td>
+</tr>
+<tr>
+  <td> Unity </td>
+  <td> ✅ </td>
+<td> ✅ </td>
+<td> ✅ </td>
+<td> 🚀  </td>
+<td> 🚀  </td>
+<td> 🚀  </td>
+
+</tr>
+<tr>
+  <td> Android SDK  </td>
+  <td> 🚀 </td>
+<td> 🚀 </td>
+<td> 🚀 </td>
+<td> 🚀  </td>
+<td> 🚀  </td>
+<td> 🚀  </td>
+
+</tr>
+<tr>
+  <td> iOS SDK  </td>
+  <td> 🚀 </td>
+<td> 🚀 </td>
+<td> 🚀 </td>
+<td> 🚀  </td>
+<td> 🚀  </td>
+<td> 🚀  </td>
+
+</tr>
+
+</table>
+
+🚀 : coming soon
 
 ## Why Portkey solution?
 
