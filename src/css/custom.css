@@ -29,6 +29,10 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+.align-center {
+  text-align: center;
+}
+
 .security-mechanism {
   display: flex;
   flex-direction: row;
@@ -49,7 +53,7 @@
   margin-top: 0;
 }
 
-.highlight-block-container{
+.highlight-block-container {
   border: 1px solid #fed4a4;
   border-radius: 8px;
   background-color: #fff5eb;

@@ -4,14 +4,12 @@ title: Delegation Fee Mechanism
 
 # Delegation Fee Mechanism
 
-Unlike some smart contract wallets that charge users fees when creating or using wallets, Portkey employs a unique delegation payment mechanism. This mechanism allows third parties to act as delegates to pay transaction fees for users, enabling users to use smart contract wallets at minimal cost.
+Unlike some smart contract wallets that charge users fees when creating or using wallets, Portkey employs a unique delegation payment mechanism. This mechanism allows third parties to act as delegatees to pay transaction fees for users, enabling users to use smart contract wallets at minimal cost.
 
 Currently, Portkey offers three specific types of delegation payments based on user behavior:
 
-| Type       | Requirements                                                                                | Types of transactions included                                |
-| ---------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| Type one   | Delegates will cover the transaction fees regardless of users' balances.                    | Account sign-up, login, and login by scanning QR code         |
-| Type two   | Delegates only need to cover the transaction fees when the users don't have enough balance. | Adding/removing guardians, and changing login accounts.       |
-| Type three | Delegates will never cover the transaction fees.                                            | Token transfers, cross-chain transactions, NFT creation, etc. |
-
-Upon accessing Portkey, each DApp can determine its own delegation mechanism based on its needs. This includes allowing users with sufficient balances to pay transaction fees themselves according to default settings. Additionally, DApps can set up to two levels of delegates (primary delegate and secondary delegate), customize the payment order of delegates, set payment conditions, and specify time limits. For instance, a DApp can set itself as the primary delegate and pay the smart contract wallet usage fee on behalf of users for specific actions, achieving a high level of customization.
+| Type       | Requirements                                                                                 | Types of transactions included                                |
+| ---------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| Type one   | delegatees will cover the transaction fees regardless of users' balances.                    | Account sign-up, login, and login by scanning QR code         |
+| Type two   | delegatees only need to cover the transaction fees when the users don't have enough balance. | Adding/removing guardians, and changing login accounts.       |
+| Type three | delegatees will never cover the transaction fees.                                            | Token transfers, cross-chain transactions, NFT creation, etc. |
