@@ -109,6 +109,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: docusaurusData.url + "/admin/#/collections/doc",
+          breadcrumbs: false,
         },
         // blog: false,
         blog: {
@@ -137,22 +138,14 @@ const config = {
           srcDark: docusaurusData?.logo?.srcDark
             ? docusaurusData?.logo?.srcDark
             : "img/portkey-logo-dark.png",
-          href: "/docs/OverviewPortkey/start-here",
+          href: "/docs/category/overview-of-portkey",
         },
         items: docusaurusData.navbar.map((item) => {
           return formatNavbarItem(item);
         }),
         hideOnScroll: true,
       },
-      footer: {
-        links: docusaurusData.footer?.links.map((item) => {
-          return formatFooterItem(item);
-        }),
-        // copyright:
-        //   `Copyright © ${new Date().getFullYear()} ` +
-        //   (docusaurusData.footer?.copyright || docusaurusData.title),
-        copyright: docusaurusData.footer?.copyright,
-      },
+      footer: {},
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
